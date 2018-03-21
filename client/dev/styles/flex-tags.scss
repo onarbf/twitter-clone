@@ -1,0 +1,21 @@
+.expand{
+  height: 100%;
+}
+.flex{
+  display: flex;
+}
+.column{
+  flex-direction: column;
+}
+.VAlign{
+  align-items: center;
+}
+.HAlign{
+  justify-content: center;
+}
+.HLeft{
+  justify-content: flex-start;
+}
+.HRight{
+  justify-content: flex-end;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import Home from './home.jsx';
-import About from './about.jsx';
+import Home from './home';
+import About from './about';
+import Login from './login';
 
 import{
   BrowserRouter as Router,
@@ -12,8 +13,9 @@ const Routes = ()=>{
   return(
     <Router>
       <Switch>
-        <Route path='/' exact component={Home}/>
+        <Route path='/' exact component={Login}/>
         <Route path='/about' exact component={About}/>
+        <Route path='/login' exact component={Login}/>
       </Switch>
     </Router>
   )

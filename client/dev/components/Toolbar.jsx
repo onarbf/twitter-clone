@@ -7,6 +7,8 @@ const Toolbar = ()=>{
       <Link to='/'>Home</Link>
       <span>|</span>
       <Link to='/about'>About</Link>
+      <span>|</span>
+      <Link to='/login'>Login</Link>
     </div>
   )
 }
