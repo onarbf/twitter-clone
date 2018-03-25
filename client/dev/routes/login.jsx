@@ -47,6 +47,7 @@ class Logins extends React.Component{
       password: this.state.inputs.inputSigninPassword
     }
     console.log('Form Sended', variables);
+    console.log('mutation', this.props.mutate);
     const response = await this.props.mutate({
       variables : variables
     })
@@ -102,7 +103,7 @@ class Logins extends React.Component{
 
 const mutation = gpl`
     mutation($username:String!, $password: String!, $email: String! ){
-      addUser(username: $username, pasword: $pasword, email: $email )
+      addUser(username: $username, password: $password, email: $email )
     }
 `
 
